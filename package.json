@@ -1,7 +1,7 @@
 {
   "name": "2048-in-react",
   "version": "0.1.0",
-  "homepage": "https://mateuszsokola.github.io/2048-in-react/",
+  "homepage": "https://eager-bassi-4a9fdf.netlify.app/",
   "license": "MIT",
   "dependencies": {
     "craco": "^0.0.3",
