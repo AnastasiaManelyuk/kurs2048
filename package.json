@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://mateuszsokola.github.io/2048-in-react/",
   "license": "MIT",
+  "start:prod": "src/index.tsx",
   "dependencies": {
     "craco": "^0.0.3",
     "react": "^17.0.2",
