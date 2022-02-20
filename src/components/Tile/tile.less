@@ -1,0 +1,100 @@
+@import "../../styles/index.less";
+
+.tile {
+  position: absolute;
+  width: @pixel-size * 12.5;
+  height: @pixel-size * 12.5;
+  margin: @pixel-size * 1;
+  border-radius: @pixel-size * 0.5;
+  background-color: #c6fd44;
+  color: #6d7765;
+  font-weight: bold;
+  text-align: center;
+  font-size: @pixel-size * 6;
+  line-height: 2.1;
+  transition-property: left, top, transform;
+  transition-duration: 250ms, 250ms, 100ms;
+  transform: scale(1);
+
+  /* -=-=-=- START OF TEXT SIZE -=-=-=- */
+  &-128,
+  &-256,
+  &-512 {
+    font-size: @pixel-size * 5.5;
+    line-height: 2.28;
+  }
+
+  &-1024,
+  &-2048 {
+    font-size: @pixel-size * 4;
+    line-height: 3.18;
+  }
+  /* -=-=-=-= END OF TEXT SIZE =-=-=-=- */
+
+  &-2 {
+    background: #eeec8a;
+    box-shadow: 0 0 30px 10px rgba(177, 243, 116, 0),
+      inset 0 0 0 1px rgba(255, 255, 255, 0);
+  }
+
+  &-4 {
+    background: #d2ec5c;
+    box-shadow: 0 0 30px 10px rgba(127, 243, 116, 0),
+      inset 0 0 0 1px rgba(255, 255, 255, 0);
+  }
+
+  &-8 {
+    color: #ffffff;
+    background: #7be071;
+  }
+
+  &-16 {
+    color: #ffffff;
+    background: #35f364;
+  }
+
+  &-32 {
+    color: #e4ffdc;
+    background: #22be37;
+  }
+
+  &-64 {
+    color: #ffffff;
+    background: #04681a;
+  }
+
+  &-128 {
+    color: #f9f6f2;
+    background: #72c0ed;
+    box-shadow: 0 0 30px 10px rgba(0, 247, 255, 0.238),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
+  }
+
+  &-256 {
+    color: #f9f6f2;
+    background: #61edcf;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
+  }
+
+  &-512 {
+    color: #f9f6f2;
+    background: #f296f5;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
+  }
+
+  &-1024 {
+    color: #f9f6f2;
+    background: #64aeeb;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+  }
+
+  &-2048 {
+    color: #f9f6f2;
+    background: #0044ff;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+  }
+}
